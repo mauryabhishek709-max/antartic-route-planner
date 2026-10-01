@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: antarctic-route-planner
+    runtime: python
+    buildCommand: "pip install -r requirements.txt && cd frontend && npm install && npm run build"
+    startCommand: "cd backend && python api_engine.py"
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: PYTHON_VERSION
+        value: 3.11.9

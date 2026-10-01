@@ -1,0 +1,7 @@
+Flask>=3.0.0
+flask-cors>=4.0.0
+h3>=4.0.0
+xarray>=2024.0.0
+netCDF4>=1.7.0
+numpy>=1.26.0
+gunicorn>=21.0.0
